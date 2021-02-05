@@ -7,7 +7,6 @@ dir <- dirname(rstudioapi::getActiveDocumentContext()$path)
 setwd(dir)
 data<-read.csv("ARIMA.csv",header=TRUE,sep=";",dec=",")
 
-# datos<-read.csv("C:/Users/usuario/Desktop/LPC/MASTERS/MBD_abril_2019/Session4data.csv",header=TRUE,sep=";",dec=",")
 y<-data[,2][1:90] # leave the last 6 observations to compare with the forecasted values
 
 # achieving stationarity and identifying the model
