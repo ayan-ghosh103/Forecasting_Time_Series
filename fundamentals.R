@@ -9,7 +9,7 @@ library(forecast)
 # Set the folder (path) that contains this R file as the working directory
 dir <- dirname(rstudioapi::getActiveDocumentContext()$path)
 setwd(dir)
-data<-read.csv("Sessions2&3sim.csv",header=TRUE,sep=";",dec=",")
+data<-read.csv("fundamentals.csv",header=TRUE,sep=";",dec=",")
 
 # Reading the files indicating the path
 # data<-read.csv("C:/Users/usuario/Desktop/LPC/MASTERS/MBD_abril_2019/Sessions2&3sim.csv",header=TRUE,sep=";",dec=",")
@@ -110,7 +110,7 @@ lines(x,yy,lwd=2,col="blue")
 
 # 2.	ANALYZING THE REAL TIME SERIES - file Sessions2&3real.csv
 
-data<-read.csv("Sessions2&3real.csv",header=TRUE,sep=";",dec=",")
+data<-read.csv("fundamentals_realdata.csv",header=TRUE,sep=";",dec=",")
 #
 # data<-read.csv("C:/Users/usuario/Desktop/LPC/MASTERS/MBD_abril_2019/Sessions2&3real.csv",header=TRUE,sep=";",dec=",")
 # we have to follow exactly the same steps as before for the spot price series and for the return series
