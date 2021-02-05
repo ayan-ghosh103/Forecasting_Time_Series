@@ -12,7 +12,6 @@ setwd(dir)
 data<-read.csv("fundamentals.csv",header=TRUE,sep=";",dec=",")
 
 # Reading the files indicating the path
-# data<-read.csv("C:/Users/usuario/Desktop/LPC/MASTERS/MBD_abril_2019/Sessions2&3sim.csv",header=TRUE,sep=";",dec=",")
 # Once the time series are read into R, we give a name to each time series data 
 # (represented by each column)
 series1=data[,1] [1:200]
@@ -112,7 +111,6 @@ lines(x,yy,lwd=2,col="blue")
 
 data<-read.csv("fundamentals_realdata.csv",header=TRUE,sep=";",dec=",")
 #
-# data<-read.csv("C:/Users/usuario/Desktop/LPC/MASTERS/MBD_abril_2019/Sessions2&3real.csv",header=TRUE,sep=";",dec=",")
 # we have to follow exactly the same steps as before for the spot price series and for the return series
 spot<-data[,1] # spot price series
 y<-spot # follow all the steps above
